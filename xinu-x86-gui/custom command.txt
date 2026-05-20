@@ -1,0 +1,11 @@
+XINU Custom Programs Installation Guide: 
+
+1. create .c files to xinu/system/
+
+2. Add to Makefile or configuration
+
+3. Run: make
+
+4. Run Xinu on QEMU 
+
+
