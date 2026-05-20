@@ -1,0 +1,15 @@
+XV6 Custom Programs Installation :
+
+1. create .c files to xv6-public/user/ folder
+
+2. Edit user/Makefile and add your programs:
+
+   UPROGS += hello getpid fork_demo rayhan_info
+
+3. Run make in xv6-public directory
+
+4. Run qemu with: make qemu
+
+5. Inside xv6 shell type: hello, getpid, etc.
+
+
