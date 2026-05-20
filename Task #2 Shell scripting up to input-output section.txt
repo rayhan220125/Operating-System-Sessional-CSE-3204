@@ -1,0 +1,90 @@
+1. Shell Basics: 
+
+* The shebang (starts the script): `#!/bin/bash` 
+
+
+* Printing output: `echo "Hello World"` 
+
+
+* Giving execute permission: `chmod +x myscript.sh` 
+
+
+* Running the script: `./myscript.sh` 
+
+
+
+2. Variables: 
+
+* Declaring and using: `name="Abu Rayhan"` and `echo "Hello, $name!"` 
+
+
+* Using braces to append text: `echo ${name}man` 
+
+
+ Special Variables:
+
+* Name of the script: `echo "Script name: $0"` 
+
+
+* First argument: `echo "First arg: $1"` 
+
+
+* Total number of arguments: `echo "Number of args: $#"` 
+
+
+* All arguments: `echo "All args: $@"` 
+
+
+* Exit code of the last command: `echo "Exit code of last cmd: $?"` 
+
+
+
+
+
+3. Arithmetic Operations: 
+
+* Basic addition: `a=3; b=2` and `echo $((a+b))` 
+
+
+* Multiplication: `echo $((a*b))` 
+
+
+* Measuring string length: `echo ${#name}` 
+
+
+* Extracting a substring: `echo ${name:0:3}` 
+
+
+
+
+4. Floating Point Evaluation (`bc -l`): 
+
+* Basic decimal math: `echo "3.5 + 2.2" | bc -l` 
+
+
+* Storing decimal results in a variable: `result=$(echo "3.5 + 2.2" | bc -l)` 
+
+
+* Setting decimal precision (`scale`) and square root: `echo "scale=4; sqrt(10)" | bc -l` 
+
+
+* Division with precision: `echo "scale=3; 10/3" | bc -l` 
+
+
+
+
+5. Input / Output:
+
+* Formatted printing: `printf "Name: %s, Age: %d\n" "Farhan" 25` 
+
+
+* Basic user input: `read name` 
+
+
+* Input with a prompt message: `read -p "Enter your age: " age` 
+
+
+* Silent input for passwords: `read -s password` 
+
+
+* Storing command output in a variable: `current_dir=$(pwd)`
