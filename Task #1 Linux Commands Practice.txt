@@ -1,0 +1,192 @@
+Task #1: Linux Commands Practice
+
+
+1. Command: cat
+
+Usage 1: cat hello.txt
+
+Description: Prints the text contents of the file to the terminal.
+
+Usage 2: cat -n hello.txt
+
+Description: Number all output lines, starting from 1.
+
+Usage 3: cat -b hello.txt
+
+Description: Number non-blank output lines only.
+
+Usage 4: cat -E hello.txt
+
+Description: Displays a $ character at the end of each line.
+
+Usage 5: cat -s hello.txt
+
+Description: Suppresses repeated empty output lines into a single blank line.
+
+
+
+2. Command: ls
+
+Usage 1: ls
+
+Description: Lists files and directories in the current working directory.
+
+Usage 2: ls -l
+
+Description: Displays files in a long listing format showing permissions, owner, size, and date.
+
+Usage 3: ls -a
+
+Description: Shows all files, including hidden files (dotfiles).
+
+Usage 4: ls -h
+
+Description: Prints human-readable file sizes (e.g., 1K, 234M, 2G).
+
+Usage 5: ls -R
+
+Description: Lists subdirectories recursively.
+
+
+
+3. Command: cp
+
+Usage 1: cp hello.txt copied.txt
+
+Description: Copies a file from the source to the destination.
+
+Usage 2: cp -r dir1 dir2
+
+Description: Copies directories and their contents recursively.
+
+Usage 3: cp -i hello.txt copied.txt
+
+Description: Prompts before overwriting an existing destination file.
+
+Usage 4: cp -u hello.txt copied.txt
+
+Description: Copies only when the source file is newer than the destination file.
+
+Usage 5: cp -v hello.txt copied.txt
+
+Description: Verbose mode, explaining what is being done during the copy process.
+
+
+
+4. Command: touch
+
+Usage 1: touch hello.txt
+
+Description: Creates an empty file if missing, or updates the timestamp if it exists.
+
+Usage 2: touch -a hello.txt
+
+Description: Changes only the access time of the file.
+
+Usage 3: touch -m hello.txt
+
+Description: Changes only the modification time of the file.
+
+Usage 4: touch -c hello.txt
+
+Description: Checks if a file exists but does not create it if it is missing.
+
+Usage 5: touch -t 202601011200 hello.txt
+
+Description: Sets a specific access and modification timestamp for the file.
+
+
+
+5. Command: rm
+
+Usage 1: rm copied.txt
+
+Description: Deletes the specified file.
+
+Usage 2: rm -r new-lab
+
+Description: Deletes a folder and its contents recursively.
+
+Usage 3: rm -rf os-lab
+
+Description: Force deletes files and directories recursively without any prompts.
+
+Usage 4: rm -i copied.txt
+
+Description: Prompts the user for confirmation before removing each file.
+
+Usage 5: rm -v copied.txt
+
+Description: Verbose mode, showing a message for every deleted file.
+
+
+
+6. Command: mkdir
+
+Usage 1: mkdir new-lab
+
+Description: Creates a new directory.
+
+Usage 2: mkdir -p dir1/dir2
+
+Description: Creates parent directories as needed.
+
+Usage 3: mkdir -v new-lab
+
+Description: Prints a message confirming the creation of the directory.
+
+Usage 4: mkdir -m 777 new-lab
+
+Description: Sets exact file mode/permissions during creation.
+
+Usage 5: mkdir --help
+
+Description: Displays the help manual and options for the mkdir command.
+
+
+
+7. Command: pwd
+
+Usage 1: pwd
+
+Description: Prints the full absolute path of the current working directory.
+
+Usage 2: pwd -L
+
+Description: Prints the logical working directory, resolving symbolic links.
+
+Usage 3: pwd -P
+
+Description: Prints the physical working directory, ignoring all symbolic links.
+
+Usage 4: pwd --help
+
+Description: Displays a brief help message for the pwd command.
+
+Usage 5: pwd --version
+
+Description: Outputs the version information of the command.
+
+
+
+8. Command: grep
+
+Usage 1: grep "main" hello.txt
+
+Description: Searches for and shows lines containing the specific text "main".
+
+Usage 2: grep -i "main" hello.txt
+
+Description: Ignores case distinctions during the search.
+
+Usage 3: grep -v "main" hello.txt
+
+Description: Inverts the match, showing all lines that do not contain the pattern.
+
+Usage 4: grep -n "main" hello.txt
+
+Description: Prints the line number alongside the output lines.
+
+Usage 5: grep -c "main" hello.txt
+
+Description: Prints only the count of matching lines instead of the actual lines.
